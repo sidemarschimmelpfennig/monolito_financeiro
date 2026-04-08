@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5709D331-8398-4947-91A5-A96C736D8FB9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\MonolitoFinanceiro.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MonolitoFinanceiro">
+        <MSBuild Projects="..\MonolitoFinanceiro.dproj"/>
+    </Target>
+    <Target Name="MonolitoFinanceiro:Clean">
+        <MSBuild Projects="..\MonolitoFinanceiro.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonolitoFinanceiro:Make">
+        <MSBuild Projects="..\MonolitoFinanceiro.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MonolitoFinanceiro"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MonolitoFinanceiro:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MonolitoFinanceiro:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

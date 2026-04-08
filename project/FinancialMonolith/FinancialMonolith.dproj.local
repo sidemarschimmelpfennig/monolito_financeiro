@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/11 08:15:06.000.160,=C:\Users\equip\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/11/15 12:32:52.000.625,=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/11/16 15:09:05.000.226,=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2021/11/19 18:45:30.000.779,=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/01/07 10:17:57.000.432,=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/01/07 10:35:11.000.146,=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/04/07 15:03:51.000.659,=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/04/07 15:07:03.000.665,C:\Users\julio\Documents\Embarcadero\Studio\Projects\MonolitoFinanceiro\src\View\MonolitoFinanceiro.View.Principal.pas=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/04/07 15:07:03.000.665,C:\Users\julio\Documents\Embarcadero\Studio\Projects\MonolitoFinanceiro\src\View\MonolitoFinanceiro.View.Principal.dfm=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2022/04/07 15:07:17.000.829,C:\Users\julio\Documents\Embarcadero\Studio\Projects\MonolitoFinanceiro\MonolitoFinanceiro.dproj=C:\Users\julio\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/04/07 22:17:03.001,D:\workspace\projects\monolito_financeiro\project\FinancialMonolith.dproj=D:\workspace\projects\monolito_financeiro\MonolitoFinanceiro.dproj</Transaction>
+    <Transaction>2026/04/07 22:17:35.789,D:\workspace\projects\monolito_financeiro\project\FinancialMonolith\FinancialMonolith.dproj=D:\workspace\projects\monolito_financeiro\project\FinancialMonolith.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android64="RQ8N6025CKZ"/>
+	</ActiveMobileDevice>
+</BorlandProject>
