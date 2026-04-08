@@ -2,13 +2,15 @@ program FinancialMonolith;
 
 uses
   Vcl.Forms,
-  MonolitoFinanceiro.View.Principal in '..\..\src\View\MonolitoFinanceiro.View.Principal.pas' {frmPrincipal};
+  uView.FinancialMonolith.main in '..\..\src\View\uView.FinancialMonolith.main.pas' {ViewFinancialMonolithMain},
+  uView.FinancialMonolith.RegisterDefault in '..\..\src\View\uView.FinancialMonolith.RegisterDefault.pas' {ViewFinancialMonolithRegisterDefault};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TViewFinancialMonolithMain, ViewFinancialMonolithMain);
+  Application.CreateForm(TViewFinancialMonolithRegisterDefault, ViewFinancialMonolithRegisterDefault);
   Application.Run;
 end.

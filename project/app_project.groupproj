@@ -3,7 +3,7 @@
         <ProjectGuid>{5709D331-8398-4947-91A5-A96C736D8FB9}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="..\MonolitoFinanceiro.dproj">
+        <Projects Include="FinancialMonolith\FinancialMonolith.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -14,23 +14,23 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="MonolitoFinanceiro">
-        <MSBuild Projects="..\MonolitoFinanceiro.dproj"/>
+    <Target Name="FinancialMonolith">
+        <MSBuild Projects="FinancialMonolith\FinancialMonolith.dproj"/>
     </Target>
-    <Target Name="MonolitoFinanceiro:Clean">
-        <MSBuild Projects="..\MonolitoFinanceiro.dproj" Targets="Clean"/>
+    <Target Name="FinancialMonolith:Clean">
+        <MSBuild Projects="FinancialMonolith\FinancialMonolith.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="MonolitoFinanceiro:Make">
-        <MSBuild Projects="..\MonolitoFinanceiro.dproj" Targets="Make"/>
+    <Target Name="FinancialMonolith:Make">
+        <MSBuild Projects="FinancialMonolith\FinancialMonolith.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="MonolitoFinanceiro"/>
+        <CallTarget Targets="FinancialMonolith"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="MonolitoFinanceiro:Clean"/>
+        <CallTarget Targets="FinancialMonolith:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="MonolitoFinanceiro:Make"/>
+        <CallTarget Targets="FinancialMonolith:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

@@ -82,13 +82,13 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
-        <DCC_DcuOutput>.\dcu</DCC_DcuOutput>
+        <DCC_DcuOutput>..\..\build\dcu</DCC_DcuOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <DCC_ExeOutput>.\bin</DCC_ExeOutput>
+        <DCC_ExeOutput>..\..\build\</DCC_ExeOutput>
         <Icon_MainIcon>..\..\assets\images\erp.ico</Icon_MainIcon>
-        <UWP_DelphiLogo44>assets\images\erp.png</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>assets\images\erp.png</UWP_DelphiLogo150>
+        <UWP_DelphiLogo44>..\..\assets\images\erp.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>..\..\assets\images\erp.png</UWP_DelphiLogo150>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -104,8 +104,12 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\..\src\View\MonolitoFinanceiro.View.Principal.pas">
-            <Form>frmPrincipal</Form>
+        <DCCReference Include="..\..\src\View\uView.FinancialMonolith.main.pas">
+            <Form>ViewFinancialMonolithMain</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\..\src\View\uView.FinancialMonolith.RegisterDefault.pas">
+            <Form>ViewFinancialMonolithRegisterDefault</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
@@ -134,20 +138,20 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="Win32\Debug\FinancialMonolith.exe" Configuration="Debug" Class="ProjectOutput"/>
-                <DeployFile LocalName="assets\images\erp.png" Configuration="Debug" Class="UWP_DelphiLogo44">
+                <DeployFile LocalName="..\..\assets\images\erp.png" Configuration="Debug" Class="UWP_DelphiLogo44">
                     <Platform Name="Win32">
                         <RemoteDir>Assets\</RemoteDir>
                         <RemoteName>Logo44x44.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="bin\FinancialMonolith.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="..\..\build\FinancialMonolith.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>FinancialMonolith.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="Win32\Debug\FinancialMonolith.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>
