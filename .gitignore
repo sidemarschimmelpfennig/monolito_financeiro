@@ -1,4 +1,39 @@
-/build/dcu
+# Cache / IDE
 
-/src/_history
-/src/_recovery
+__history/
+__recovery/
+*.identcache
+*.local
+
+# Compilação
+
+*.dcu
+*.ddp
+*.dsk
+*.map
+*.stat
+*.drc
+
+# Build output
+
+Win32/Debug/
+Win32/Release/
+Win64/Debug/
+Win64/Release/
+Debug/
+Release/
+
+# Arquivos temporários
+
+*.~*
+*.tmp
+*.log
+
+# Backup
+
+*.bak
+
+# Outros
+
+*.rsm
+*.tvsconfig

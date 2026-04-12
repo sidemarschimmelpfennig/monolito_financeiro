@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2026/04/07 22:15:51.000.049,C:\Users\sidem\OneDrive\Documentos\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=D:\workspace\projects\monolito_financeiro\project\app_project.groupproj</Transaction>
-  </Transactions>
-	<Default.Personality>
-		<Projects ActiveProject="D:\workspace\projects\monolito_financeiro\project\ERP\ERP.dproj"/>
-	</Default.Personality>
-</BorlandProject>
