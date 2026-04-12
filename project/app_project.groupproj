@@ -3,7 +3,7 @@
         <ProjectGuid>{5709D331-8398-4947-91A5-A96C736D8FB9}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="FinancialMonolith\FinancialMonolith.dproj">
+        <Projects Include="ERP\ERP.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -14,23 +14,23 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="FinancialMonolith">
-        <MSBuild Projects="FinancialMonolith\FinancialMonolith.dproj"/>
+    <Target Name="ERP">
+        <MSBuild Projects="ERP\ERP.dproj"/>
     </Target>
-    <Target Name="FinancialMonolith:Clean">
-        <MSBuild Projects="FinancialMonolith\FinancialMonolith.dproj" Targets="Clean"/>
+    <Target Name="ERP:Clean">
+        <MSBuild Projects="ERP\ERP.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="FinancialMonolith:Make">
-        <MSBuild Projects="FinancialMonolith\FinancialMonolith.dproj" Targets="Make"/>
+    <Target Name="ERP:Make">
+        <MSBuild Projects="ERP\ERP.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="FinancialMonolith"/>
+        <CallTarget Targets="ERP"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FinancialMonolith:Clean"/>
+        <CallTarget Targets="ERP:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FinancialMonolith:Make"/>
+        <CallTarget Targets="ERP:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
