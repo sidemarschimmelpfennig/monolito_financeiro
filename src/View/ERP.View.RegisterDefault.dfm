@@ -21,7 +21,7 @@ object ViewERPRegisterDefault: TViewERPRegisterDefault
     Width = 864
     Height = 674
     Align = alClient
-    ActiveCard = cardRegister
+    ActiveCard = cardSearch
     BevelOuter = bvNone
     Caption = 'pnlMain'
     TabOrder = 0
@@ -33,8 +33,6 @@ object ViewERPRegisterDefault: TViewERPRegisterDefault
       Caption = 'cardSearch'
       CardIndex = 0
       TabOrder = 1
-      ExplicitWidth = 848
-      ExplicitHeight = 635
       object pnlOptions: TPanel
         Left = 0
         Top = 574
@@ -45,8 +43,6 @@ object ViewERPRegisterDefault: TViewERPRegisterDefault
         Color = clHotLight
         ParentBackground = False
         TabOrder = 0
-        ExplicitTop = 535
-        ExplicitWidth = 848
         object btnPrinter: TSpeedButton
           Left = 300
           Top = 0
@@ -176,7 +172,6 @@ object ViewERPRegisterDefault: TViewERPRegisterDefault
         Color = clHighlight
         ParentBackground = False
         TabOrder = 2
-        ExplicitWidth = 848
         object Label1: TLabel
           Left = 16
           Top = 0
@@ -200,14 +195,12 @@ object ViewERPRegisterDefault: TViewERPRegisterDefault
           Caption = 'PESQUISAR'
           ImageIndex = 8
           Images = imgList
-          Flat = True
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
           Font.Height = -16
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          Transparent = False
           ExplicitLeft = 696
           ExplicitHeight = 89
         end
@@ -1888,5 +1881,10 @@ object ViewERPRegisterDefault: TViewERPRegisterDefault
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000}
+  end
+  object DS_CONNECTION: TDataSource
+    DataSet = ModelERPConnection.DataQuery
+    Left = 432
+    Top = 232
   end
 end
