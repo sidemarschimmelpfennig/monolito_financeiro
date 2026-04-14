@@ -10,8 +10,6 @@ uses
 
 type
   TViewERPRegisterUser = class(TViewERPRegisterDefault)
-    procedure btnCloseClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
     fService:  TServiceErpRegisterUser;
@@ -25,20 +23,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TViewERPRegisterUser.btnCloseClick(Sender: TObject);
-begin
-  inherited;
-  fService.clear;
-end;
-
-
-
-
-procedure TViewERPRegisterUser.FormCreate(Sender: TObject);
-begin
-  inherited;
-  fService.show_users;
-end;
 
 end.

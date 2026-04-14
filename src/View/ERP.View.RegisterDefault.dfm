@@ -1883,7 +1883,6 @@ object ViewERPRegisterDefault: TViewERPRegisterDefault
       000000000000}
   end
   object DS_CONNECTION: TDataSource
-    DataSet = ModelERPConnection.DataQuery
     Left = 432
     Top = 232
   end

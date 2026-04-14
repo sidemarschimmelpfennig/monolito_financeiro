@@ -1,7 +1,6 @@
 inherited ViewERPRegisterUser: TViewERPRegisterUser
   Align = alClient
   Caption = 'ViewERPRegisterUser'
-  OnCreate = FormCreate
   TextHeight = 15
   inherited pnlMain: TCardPanel
     inherited cardSearch: TCard

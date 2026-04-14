@@ -110,7 +110,6 @@ end;
 
 procedure TViewERPRegisterDefault.FormShow(Sender: TObject);
 begin
-  ModelERPConnection.DataQuery.Open;
   AdjusteColumn(DBGrid2, 0);
   pnlMain.ActiveCard := cardSearch;
 

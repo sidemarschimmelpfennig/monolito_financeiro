@@ -13,7 +13,6 @@ uses
 type
   TModelERPConnection = class(TDataModule)
     fdConnectionDataBase: TFDConnection;
-    DataQuery: TFDQuery;
     procedure DataModuleCreate(Sender: TObject);
     procedure DataModuleDestroy(Sender: TObject);
   private
@@ -70,7 +69,6 @@ begin
   Ini := TIniFile.Create(LocalIni);
   try
     fdConnectionDataBase.Params.Clear;
-
     fdConnectionDataBase.Params.Add('DriverID=' + Ini.ReadString('DATABASE', 'DriverID', 'SQLite'));
     fdConnectionDataBase.Params.Add('LockingMode=' + Ini.ReadString('DATABASE', 'LockingMode', 'Exclusive'));
     fdConnectionDataBase.Params.Add('Database=' + Ini.ReadString('DATABASE', 'DataBase', ''));
