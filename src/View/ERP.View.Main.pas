@@ -4,8 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, ERP.View.RegisterDefault, ERP.View.Splash, ERP.View.RegisterUser,
-  Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls;
 
 type
   TViewErpMain = class(TForm)
@@ -21,9 +21,6 @@ type
   private
     { Private declarations }
 
-    fViewRegister: TViewErpRegisterDefault;
-    fViewSplash : TViewERPSplash;
-    fViewUser : TViewERPRegisterUser;
   public
     { Public declarations }
 
@@ -33,26 +30,24 @@ var
   ViewErpMain: TViewErpMain;
 
 implementation
+  uses
+    ERP.View.Splash, ERP.Grid.User;
 
 {$R *.dfm}
 
 
 procedure TViewErpMain.menuRegisterUserClick(Sender: TObject);
 begin
-    fViewUser := TViewErpRegisterUser.Create(nil);
-    fViewUser.Parent := pnContent;   // coloca dentro do panel
-    fViewUser.Align := alClient;     // ocupa todo o espaço
-    fViewUser.BorderStyle := bsNone; // remove borda
-    fViewUser.Show;
+    GridERPUser.Show;
 end;
 
 procedure TViewErpMain.FormCreate(Sender: TObject);
 begin
-  fViewSplash := TViewErpSplash.Create(nil);
+  ViewERPSplash := TViewErpSplash.Create(nil);
   try
-    fViewSplash.ShowModal;
+    ViewERPSplash.ShowModal;
   finally
-    FreeAndNil(fViewSplash);
+    FreeAndNil(ViewERPSplash);
   end;
 end;
 

@@ -1,13 +1,9 @@
 object ModelErpUser: TModelErpUser
   Height = 480
   Width = 640
-  object queryUsers: TSQLQuery
-    Params = <>
-    Left = 72
-    Top = 56
-  end
   object dspUsers: TDataSetProvider
     DataSet = queryUsers
+    Options = [poAllowCommandText, poUseQuoteChar]
     Left = 184
     Top = 72
   end
@@ -17,5 +13,10 @@ object ModelErpUser: TModelErpUser
     ProviderName = 'dspUsers'
     Left = 312
     Top = 88
+  end
+  object queryUsers: TFDQuery
+    Connection = ModelERPConnection.fdConnectionDataBase
+    Left = 24
+    Top = 64
   end
 end

@@ -1,0 +1,23 @@
+unit ERP.Service.User;
+
+interface
+uses
+  System.SysUtils, ERP.Model.Connection,System.Classes;
+
+type
+  TServiceErpUser = class(TObject)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+
+
+{ TServiceErpUser }
+
+
+
+end.

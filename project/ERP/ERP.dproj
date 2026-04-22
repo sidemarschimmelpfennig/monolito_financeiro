@@ -114,27 +114,26 @@
         <DCCReference Include="..\..\src\View\ERP.View.Main.pas">
             <Form>ViewErpMain</Form>
         </DCCReference>
-        <DCCReference Include="..\..\src\View\ERP.View.RegisterDefault.pas">
-            <Form>ViewERPRegisterDefault</Form>
+        <DCCReference Include="..\..\src\View\Grids\ERP.Grid.Main.pas">
+            <Form>GridERPMain</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="..\..\src\View\ERP.View.Splash.pas">
             <Form>ViewERPSplash</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="..\..\src\Model\ERP.Model.Connection.pas">
-            <Form>ModelERPConnection</Form>
+        <DCCReference Include="..\..\src\Service\ERP.Service.Default.pas"/>
+        <DCCReference Include="..\..\src\Model\ERP.Model.Users.pas">
+            <Form>ModelErpUser</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="..\..\src\View\ERP.View.RegisterUser.pas">
-            <Form>ViewERPRegisterUser</Form>
+        <DCCReference Include="..\..\src\View\Grids\ERP.Grid.User.pas">
+            <Form>GridERPUser</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="..\..\src\Service\ERP.Service.Default.pas"/>
-        <DCCReference Include="..\..\src\Service\ERP.Service.RegisterUser.pas"/>
-        <DCCReference Include="..\..\src\Model\ERP.Model.Users.pas">
-            <Form>ModelErpUser</Form>
+        <DCCReference Include="..\..\src\Model\ERP.Model.Connection.pas">
+            <Form>ModelERPConnection</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
