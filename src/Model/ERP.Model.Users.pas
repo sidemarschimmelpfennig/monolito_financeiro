@@ -14,6 +14,12 @@ type
     dspUsers: TDataSetProvider;
     cdsUsers: TClientDataSet;
     queryUsers: TFDQuery;
+    cdsUsersID: TIntegerField;
+    cdsUsersSENHA: TStringField;
+    cdsUsersLOGIN: TStringField;
+    cdsUsersSTATUS: TStringField;
+    cdsUsersDATA_CADASTRO: TDateField;
+    cdsUsersNOME: TStringField;
   private
     { Private declarations }
 

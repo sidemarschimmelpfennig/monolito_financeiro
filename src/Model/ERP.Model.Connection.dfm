@@ -9,6 +9,8 @@ object ModelERPConnection: TModelERPConnection
         'Database=D:\workspace\projects\sistema_erp_basico\build\database' +
         '.sqlite'
       'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
     Left = 64
     Top = 48
   end
